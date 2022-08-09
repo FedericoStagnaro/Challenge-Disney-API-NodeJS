@@ -1,0 +1,46 @@
+{
+  "name": "challenge-backend---nodejs",
+  "version": "1.0.0",
+  "description": "Proyecto de Seleccion",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "mocha",
+    "test:watch": "cross-env NODE_ENV=test mocha --watch",
+    "fill:testDB" : "node test/helper/semilla_setter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoStagnaro/Challenge-Backend---NodeJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoStagnaro/Challenge-Backend---NodeJs/issues"
+  },
+  "homepage": "https://github.com/FedericoStagnaro/Challenge-Backend---NodeJs#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "16.0.1",
+    "express": "4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "ms": "^2.1.3",
+    "sequelize": "^6.21.2",
+    "sqlite3": "^5.0.8",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "chai-image": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "8.19.0",
+    "eslint-plugin-sequelize": "github:tebriel/eslint-plugin-sequelize",
+    "mocha": "^10.0.0",
+    "nodemon": "2.0.19"
+  }
+}
