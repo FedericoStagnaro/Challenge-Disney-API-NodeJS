@@ -3,11 +3,11 @@
 
 ### Setup (.env)
 
-	PORT
+	PORT (tu puerto / default 3000)
 
-	SECRET
+	SECRET ( JWT )
 
-	SENDGRID_API_KEY=
+	SENDGRID_API_KEY ( sendGrid Key )
 
 ### Comandos para la prueba de la api:
 
