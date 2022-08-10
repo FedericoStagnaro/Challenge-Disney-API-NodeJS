@@ -1,6 +1,14 @@
 # Challenge-Disney-API-NodeJS
 **Desafio de Seleccion**
 
+### Setup (.env)
+
+	PORT
+
+	SECRET
+
+	SENDGRID_API_KEY=
+
 ### Comandos para la prueba de la api:
 
 	npm run fill:testDB 
