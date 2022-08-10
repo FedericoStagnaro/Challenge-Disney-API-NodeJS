@@ -105,7 +105,7 @@ User.addHook('afterCreate', (user)=>{
             </p>`
     }
     
-    if(process.env.NODE_ENV == 'production') {
+    if(process.env.SENDGRID_API_KEY &&  process.env.NODE_ENV == 'production') {
         sgMail
             .send(msg)
             .catch((error) => {
